@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Success!</h1>
+    {% if action == "cancel" %}
+    <p>Your ticket cancellation for {{ route }} is successful.</p>
+    {% else %}
+    <p>Your booking for {{ route }} is successful!</p>
+    <p>Seat {{ seat_number }} ({{ seat_type }}) is booked. Total cost: ₹{{ total_price }}</p>
+    {% endif %}
+    <a href="{{ url_for('home') }}">Go Back Home</a>
+</body>
+</html>

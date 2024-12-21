@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Tickets</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Book Tickets for {{ route }}</h1>
+    <form method="post">
+        <label for="seat_type">Seat Type:</label>
+        <select name="seat_type" id="seat_type">
+            <option value="regular">Regular - ₹500</option>
+            <option value="sleeper">Sleeper - ₹800</option>
+        </select>
+        <label for="seat_number">Seat Number:</label>
+        <input type="number" name="seat_number" id="seat_number" required>
+        <button type="submit">Book</button>
+    </form>
+</body>
+</html>

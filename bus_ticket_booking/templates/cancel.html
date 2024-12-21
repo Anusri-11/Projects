@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cancel Tickets</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Cancel Tickets for {{ route }}</h1>
+    <form method="post">
+        <label for="seat_type">Seat Type:</label>
+        <select name="seat_type" id="seat_type">
+            <option value="regular">Regular</option>
+            <option value="sleeper">Sleeper</option>
+        </select>
+        <label for="seat_number">Seat Number:</label>
+        <input type="number" name="seat_number" id="seat_number" required>
+        <button type="submit">Cancel</button>
+    </form>
+</body>
+</html>
